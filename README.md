@@ -55,7 +55,7 @@
         type: 'delete',
         url: rootUrl+'/api',
         data: {
-            // 删除匹配的第一条
+            // 删除匹配的第一项
             mode: 'one',
             filter: JSON.stringify({
                 name: 'morilence'
@@ -117,7 +117,7 @@
         type: 'put',
         url: rootUrl+'/api',
         data: {
-            // 更新匹配的第一条
+            // 更新匹配的第一项
             mode: 'one',
             filter: {
                 name: 'morilence'
