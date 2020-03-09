@@ -110,7 +110,7 @@
   - **operations** (Array) : 操作组（`bulk` 模式下）
   - **options** (Object) : 配置，可选
 
-- 请求示例（jqAjax）
+- 请求示例（jqAjax） :
 
     ```js
     $.ajax({
@@ -178,7 +178,7 @@
   - **pipeline** (Array) : 操作管道
   - **options** (Object) : 配置，可选
 
-- 请求示例（jqAjax）
+- 请求示例（jqAjax） :
 
     ```js
     $.ajax({
