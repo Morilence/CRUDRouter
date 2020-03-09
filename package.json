@@ -1,0 +1,25 @@
+{
+  "name": "crud-router",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "koa",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "koa": "^2.8.1",
+    "koa-body": "^4.1.1",
+    "koa-cors": "0.0.16",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "mongodb": "^3.3.2"
+  }
+}
