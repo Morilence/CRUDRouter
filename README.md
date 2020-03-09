@@ -175,7 +175,7 @@
 
 - 参数详细 :
 
-  - **pipeline** (Array) : 操作管道
+  - **pipeline** (Array) : 管道
   - **options** (Object) : 配置，可选
 
 - 请求示例（jqAjax） :
