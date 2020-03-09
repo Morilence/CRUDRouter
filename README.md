@@ -185,7 +185,7 @@
         type: 'get',
         url: rootUrl+'/api',
         data: {
-            pipeline: JSON([
+            pipeline: JSON.stringify([
                 {$match: {age: {$lt: 18}}},
                 {$sort: 1},
                 {$skip: 0},
