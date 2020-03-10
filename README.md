@@ -87,7 +87,7 @@
                 },
                 {
                     deleteMany: {
-                        name: { $regex: 'fuck', $options: 'g' }
+                        filter: {name: { $regex: 'fuck', $options: 'g' }}
                     }
                 }
             ])
