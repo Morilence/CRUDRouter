@@ -53,26 +53,25 @@
     ```js
     $.ajax({
         type: 'delete',
-        url: rootUrl+'/api',
-        data: {
+        url: rootUrl+'/api'+`?${$.param({
             // 删除匹配的第一项
             mode: 'one',
             filter: JSON.stringify({
                 name: 'morilence'
             })
-        },
+        })}`,
         /*
         * 删除所有匹配项
-        data: {
+        url: rootUrl+'/api'+`?${$.param({
             mode: 'many',
             filter: JSON.stringify({
                 name: { $regex: 'fuck', $options: 'g' }
             })
-        },
+        })}`,
         */
         /*
         * 批量执行
-        data: {
+        url: rootUrl+'/api'+`?${$.param({
             mode: 'bulk',
             operations: JSON.stringify([
                 {
@@ -91,7 +90,7 @@
                     }
                 }
             ])
-        },
+        })}`,
         */
         dataType: 'json',
         /* other */
