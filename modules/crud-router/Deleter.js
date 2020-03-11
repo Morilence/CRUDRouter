@@ -13,8 +13,7 @@ class Deleter {
                 try {
                     await this.db.deleteOne(
                         this.collectionName,
-                        {_id: ObjectId(ctx.params.id)},
-                        payload.options==undefined?{}:JSON.parse(payload.options)
+                        {_id: ObjectId(ctx.params.id)}
                     ).then(res => {
                         returnData = {
                             status: 200,
