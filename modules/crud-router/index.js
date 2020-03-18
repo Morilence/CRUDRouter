@@ -54,9 +54,11 @@ class CRUDRouter {
                                 payload.pipeline[indexOfMatch]["$match"]._id = ObjectId($match._id);
                             } else if (typeof $match._id == "object") {
                                 if ($match._id["$in"] != undefined) {
+                                    let inArr = [];
                                     payload.pipeline[indexOfMatch]["$match"]._id["$in"].forEach(idItem => {
-                                        idItem = ObjectId(idItem);
+                                        inArr.push(ObjectId(idItem));
                                     });
+                                    payload.pipeline[indexOfMatch]["$match"]._id["$in"] = inArr;
                                 }
                             }
                         }
